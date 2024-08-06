@@ -34,11 +34,13 @@ public class First {
             js.executeScript("window.scrollBy(0,500)");
             String winget="/html/body/div[2]/div/div/div[2]/div/div[4]";
             String accordian="/html/body/div[2]/div/div/div/div[1]/div/div/div[4]/div/ul/li[1]";
+
             driver.findElement(By.xpath(winget)).click();
 //            driver.findElement(By.id("item-0")).click();
             js.executeScript("window.scrollBy(0,600)");
             driver.findElement(By.xpath(accordian)).click();
             js.executeScript("window.scrollBy(0,600)");
+
         }
 
 
